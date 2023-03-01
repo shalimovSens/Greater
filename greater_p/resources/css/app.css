@@ -1,0 +1,32 @@
+:root {
+    --background-color: #04202c;
+    --primary-color: #c9d1c8;
+    --accent-color: #5b7065;
+}
+:root {
+    --background-color: #2d3033;
+    --primary-color: #d4dde1;
+    --accent-color: #335252;
+    --accent-color2: #aa4b41;
+}
+:root {
+    --background-color: #432e33;
+    --primary-color: #f1d3bc;
+    --accent-color: #e7472e;
+    --accent-color2: #6eb5c0;
+}
+:root {
+    --background-color: #262f34;
+    --primary-color: #e5e2ca;
+    --accent-color: #615049;
+}
+:root {
+    --background-color: #130a1d;
+    --primary-color: #f7f3c2;
+    --accent-color: #08002b;
+}
+:root {
+    --background-color: #e9c788;
+    --primary-color: #ffffff;
+    --accent-color: #d81f25;
+}

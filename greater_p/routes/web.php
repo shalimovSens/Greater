@@ -1,7 +1,8 @@
 <?php
 
+use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\MainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+// Route::get('/test', fn(Request $request) => view('test'));
+Route::get('/', [MainController::class, 'viewIndex']);
+Route::get('/test', [MainController::class, 'viewTest']);
+Route::get('php', [MainController::class, 'goToShit']);
+Route::get('/request', [MainController::class, 'viewRequest']);
+Route::get('/ip', [MainController::class, 'viewIP']);
+// Route::get('/request', [MainController::class, 'view']);
