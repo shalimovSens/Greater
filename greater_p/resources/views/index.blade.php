@@ -29,8 +29,10 @@
                     <h2 class="mainTitle"><span>You</span> are Greater than yesterday</h2>
                     <article class="cardSectionGrid">
                         <div class="col-1">
-                            <div class="vertical cardInner">
-                                <h6 class="verticalText cardTitle textShadow">Witness your greatness</h6>                            </div>
+                            <div class="cardInner">
+                                <h6 class="verticalText cardTitle textShadow">Witness your greatness.</h6>
+                                <p class="verticalText cardTitle textShadow">We help you</p>
+                            </div>
                         </div>
                         <div class="col-2">
                             <div class="card">
@@ -71,5 +73,6 @@
                 </div>
             </div>
         </footer>
+        <script src="/js/script.js"></script>
 </body>
 </html>

@@ -116,27 +116,9 @@ span {
 .card:last-child {
     margin: 0;
 }
-.vertical {
-    background: -moz-linear-gradient(left, var(--background-color) 10%, rgba(0, 0, 0, 0)) !important;
-    padding: 10px 0px 10px 10px !important;
-    align-items: flex-start !important;
-}
-.verticalText {
-    writing-mode: vertical-lr;
-    text-align: center;
-}
-.cardInner {
-    background: -moz-linear-gradient(right, var(--background-color) 20%, rgba(0, 0, 0, 0));
-    width: 100%;
-    height: 100%;
-    padding: 10px 30px 10px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 .col-1 {
     background: url('/img/forestlaunch.jpg');
-    background-position: center;
+    background-position: 60% 50%;
 }
 .col-2 > .card:nth-child(1) {
     background: url('/img/woman.jpg');
@@ -153,6 +135,23 @@ span {
 .col-2 {
     grid-column: span 2;
 } 
+.vertical {
+    background: -moz-linear-gradient(left, var(--background-color) 10%, rgba(0, 0, 0, 0)) !important;
+    padding: 10px 0px 10px 10px !important;
+    align-items: flex-start !important;
+}
+.verticalText {
+    writing-mode: vertical-lr;
+}
+.cardInner {
+    background: -moz-linear-gradient(right, var(--background-color) 21%, rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 100%;
+    padding: 10px 30px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .cardTitle {
     font-weight: 700;
     font-size: 24px;
@@ -160,59 +159,42 @@ span {
 }
 .cardDesc, .cardTitle {
     text-align: center;
-    width: 20%;
+    width: 230px;
+    display: block;
 }
 @media screen and (max-width: 1550px) {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 25%, rgba(0, 0, 0, 0));
-    }
-    .cardDesc, .cardTitle {
-        width: 25%;
     }
 }
 @media screen and (max-width: 1400px) {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 28%, rgba(0, 0, 0, 0));
     }
-    .cardDesc, .cardTitle {
-        width: 28%;
-    }
 }
 @media screen and (max-width: 1250px) {
     .cardInner {
-        background: -moz-linear-gradient(right, var(--background-color) 34%, rgba(0, 0, 0, 0));
-    }
-    .cardDesc, .cardTitle {
-        width: 34%;
+        background: -moz-linear-gradient(right, var(--background-color) 32%, rgba(0, 0, 0, 0));
     }
 }
 @media screen and (max-width: 1130px) {
     .cardInner {
-        background: -moz-linear-gradient(right, var(--background-color) 38%, rgba(0, 0, 0, 0));
-    }
-    .cardDesc, .cardTitle {
-        width: 38%;
+        background: -moz-linear-gradient(right, var(--background-color) 36%, rgba(0, 0, 0, 0));
     }
 }
 @media screen and (max-width: 974px) {
-    .vertical {
-        background: -moz-linear-gradient(left, var(--background-color) 10%, rgba(0, 0, 0, 0));
-        padding: 10px 0px 10px 10px;
-        align-items: flex-start;
-    }
     .col-1 {
         grid-column: span 2;
     }
     .cardInner{
-        background: -moz-linear-gradient(bottom, var(--background-color) 25%, rgba(0, 0, 0, 0)) !important;
+        background: -moz-linear-gradient(bottom, var(--background-color) 27%, rgba(0, 0, 0, 0));
         align-items: center;
         justify-content: flex-end;
         min-height: 500px;
-        padding: 10px;
+        padding: 10px 5px 0px;
     }
     .cardTitle, .cardDesc {
-        writing-mode: horizontal-tb !important;
-        text-align: center;
+        writing-mode: horizontal-tb;
         width: 100%;
     }
     .col-1 {
