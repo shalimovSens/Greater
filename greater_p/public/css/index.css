@@ -20,6 +20,7 @@
 body, html {
     width: 100%;
     min-height: 100vh;
+    background-color: var(--background-color);
 }
 .wrap {
     width: inherit;
@@ -210,4 +211,48 @@ span {
         background-position: 50% 90%;
         margin-bottom: 30px;
     }
+}
+.regBtn {
+    transition: .3s;
+}
+.regBtn:hover {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    box-shadow: 3px 3px var(--accent-color);
+}
+.regField {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: var(--backgroud-color-accent);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    /* margin-top: -200px;
+    margin-left: -200px; */
+}
+.regForm {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.regForm  > label{
+    width: 90%;
+}
+.regForm input[type='text'], input[type='email'], input[type='password'] {
+    width: 100%;
+}
+.nonDisplay {
+    /* margin: 0 !important;
+    width: 0 !important;
+    height: 0 !important; */
+    display: none !important;
+}
+.isBackground {
+    opacity: 0.4;
 }

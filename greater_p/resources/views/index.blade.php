@@ -62,6 +62,7 @@
                             </div>
                         </div>
                     </article>
+                    <button class="btn regBtn">Registration</button>
                 </div>
             </div>
         </main>
@@ -73,6 +74,24 @@
                 </div>
             </div>
         </footer>
-        <script src="/js/script.js"></script>
+    </div>
+    <div class="regField nonDisplay">
+        <form action="" class="regForm">
+            <label for="">Your name
+                <input type="text">
+            </label>
+            <label for="">Email
+                <input type="email">
+            </label>
+            <label for="">Password
+                <input type="password">
+            </label>
+            <label for="">Password repeat
+                <input type="password">
+            </label>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    <script src="/js/script.js"></script>
 </body>
 </html>
