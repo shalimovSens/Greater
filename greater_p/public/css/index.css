@@ -52,6 +52,8 @@ header, footer, main {
 }
 header {
    background: -moz-linear-gradient(top, var(--backgroud-color-accent) 60%, var(--background-color));
+   background: linear-gradient(top, var(--backgroud-color-accent) 60%, var(--background-color));
+
 }
 main {
     flex: 1 1 auto;
@@ -147,6 +149,7 @@ h2 span {
 } 
 .vertical {
     background: -moz-linear-gradient(left, var(--background-color) 10%, rgba(0, 0, 0, 0)) !important;
+    background: linear-gradient(left, var(--background-color) 10%, rgba(0, 0, 0, 0)) !important;
     padding: 10px 0px 10px 10px !important;
     align-items: flex-start !important;
 }
@@ -155,6 +158,7 @@ h2 span {
 }
 .cardInner {
     background: -moz-linear-gradient(right, var(--background-color) 21%, rgba(0, 0, 0, 0));
+    background: linear-gradient(right, var(--background-color) 21%, rgba(0, 0, 0, 0));
     width: 100%;
     height: 100%;
     padding: 10px 30px 10px 0px;
@@ -175,21 +179,25 @@ h2 span {
 @media screen and (max-width: 1550px) {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 25%, rgba(0, 0, 0, 0));
+        background: linear-gradient(right, var(--background-color) 25%, rgba(0, 0, 0, 0));
     }
 }
 @media screen and (max-width: 1400px) {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 28%, rgba(0, 0, 0, 0));
+        background: linear-gradient(right, var(--background-color) 28%, rgba(0, 0, 0, 0));
     }
 }
 @media screen and (max-width: 1250px) {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 32%, rgba(0, 0, 0, 0));
+        background: linear-gradient(right, var(--background-color) 32%, rgba(0, 0, 0, 0));
     }
 }
 @media screen and (max-width: 1130px) {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 36%, rgba(0, 0, 0, 0));
+        background: linear-gradient(right, var(--background-color) 36%, rgba(0, 0, 0, 0));
     }
 }
 @media screen and (max-width: 974px) {
@@ -198,6 +206,7 @@ h2 span {
     }
     .cardInner{
         background: -moz-linear-gradient(bottom, var(--background-color) 27%, rgba(0, 0, 0, 0));
+        background: linear-gradient(bottom, var(--background-color) 27%, rgba(0, 0, 0, 0));
         align-items: center;
         justify-content: flex-end;
         min-height: 500px;
