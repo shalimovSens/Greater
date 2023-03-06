@@ -53,6 +53,8 @@ header, footer, main {
 header {
     background: -moz-linear-gradient(top, var(--backgroud-color-accent) 60%, var(--background-color));
     background: linear-gradient(top, var(--backgroud-color-accent) 60%, var(--background-color));
+    background: -o-linear-gradient(top, var(--backgroud-color-accent) 60%, var(--background-color));
+    background: linear-gradient(top, var(--backgroud-color-accent) 60%, var(--background-color));
     background: -webkit-linear-gradient(top, var(--backgroud-color-accent) 60%, var(--background-color));
 }
 main {
@@ -150,6 +152,7 @@ h2 span {
 .vertical {
     background: -moz-linear-gradient(left, var(--background-color) 10%, rgba(0, 0, 0, 0)) !important;
     background: linear-gradient(left, var(--background-color) 10%, rgba(0, 0, 0, 0)) !important;
+    background: -o-linear-gradient(left, var(--background-color) 10%, rgba(0, 0, 0, 0)) !important;
     background: -webkit-linear-gradient(left, var(--background-color) 10%, rgba(0, 0, 0, 0)) !important;
     padding: 10px 0px 10px 10px !important;
     align-items: flex-start !important;
@@ -160,6 +163,7 @@ h2 span {
 .cardInner {
     background: -moz-linear-gradient(right, var(--background-color) 21%, rgba(0, 0, 0, 0));
     background: linear-gradient(right, var(--background-color) 21%, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(right, var(--background-color) 21%, rgba(0, 0, 0, 0));
     background: -webkit-linear-gradient(right, var(--background-color) 21%, rgba(0, 0, 0, 0));
     width: 100%;
     height: 100%;
@@ -182,6 +186,7 @@ h2 span {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 25%, rgba(0, 0, 0, 0));
         background: linear-gradient(right, var(--background-color) 25%, rgba(0, 0, 0, 0));
+        background: -o-linear-gradient(right, var(--background-color) 25%, rgba(0, 0, 0, 0));
         background: -webkit-linear-gradient(right, var(--background-color) 25%, rgba(0, 0, 0, 0));
     }
 }
@@ -189,6 +194,7 @@ h2 span {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 28%, rgba(0, 0, 0, 0));
         background: linear-gradient(right, var(--background-color) 28%, rgba(0, 0, 0, 0));
+        background: -o-linear-gradient(right, var(--background-color) 28%, rgba(0, 0, 0, 0));
         background: -webkit-linear-gradient(right, var(--background-color) 28%, rgba(0, 0, 0, 0));
     }
 }
@@ -196,6 +202,7 @@ h2 span {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 32%, rgba(0, 0, 0, 0));
         background: linear-gradient(right, var(--background-color) 32%, rgba(0, 0, 0, 0));
+        background: -o-linear-gradient(right, var(--background-color) 32%, rgba(0, 0, 0, 0));
         background: -webkit-linear-gradient(right, var(--background-color) 32%, rgba(0, 0, 0, 0));
     }
 }
@@ -203,6 +210,7 @@ h2 span {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 36%, rgba(0, 0, 0, 0));
         background: linear-gradient(right, var(--background-color) 36%, rgba(0, 0, 0, 0));
+        background: -o-linear-gradient(right, var(--background-color) 36%, rgba(0, 0, 0, 0));
         background: -webkit-linear-gradient(right, var(--background-color) 36%, rgba(0, 0, 0, 0));
     }
 }
@@ -213,6 +221,7 @@ h2 span {
     .cardInner{
         background: -moz-linear-gradient(bottom, var(--background-color) 27%, rgba(0, 0, 0, 0));
         background: linear-gradient(bottom, var(--background-color) 27%, rgba(0, 0, 0, 0));
+        background: -o-linear-gradient(bottom, var(--background-color) 27%, rgba(0, 0, 0, 0));
         background: -webkit-linear-gradient(bottom, var(--background-color) 27%, rgba(0, 0, 0, 0));
         align-items: center;
         justify-content: flex-end;
