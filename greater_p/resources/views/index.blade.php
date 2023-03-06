@@ -27,6 +27,20 @@
             <div class="container">
                 <div class="mainInner">
                     <h2 class="mainTitle"><span>You</span> are Greater than yesterday</h2>
+                    <div class="timerWrap">
+                        <div class="circle">
+                            <svg>
+                                <circle cx="50%" cy="50%" r="48.8%"></circle>
+                                <circle cx="50%" cy="50%" r="46.5%" class="progressCircle"></circle>
+                            </svg>
+                            <div class='time'><span class="hours textShadow">00</span>:<span class="minutes textShadow">00</span>:<span class="seconds textShadow">00</span></div>
+                        </div>
+                        <div class="navStopwatch">
+                            <button class="startCount btn">Start</button>
+                            <button class="stopCount btn">Stop</button>
+                            <button class="resetCount btn">Reset</button>
+                        </div>
+                    </div>
                     <article class="cardSectionGrid">
                         <div class="col-1">
                             <div class="cardInner">
@@ -62,7 +76,10 @@
                             </div>
                         </div>
                     </article>
-                    <button class="btn regBtn">Registration</button>
+                    <div class="WrapOfAccBtn">
+                        <button class="btn regBtn">Registration</button>
+                        <button class="btn logBtn">Login</button>
+                    </div>
                 </div>
             </div>
         </main>
@@ -93,5 +110,6 @@
         </form>
     </div>
     <script src="/js/script.js"></script>
+    <script src="/js/stopwatch.js"></script>
 </body>
 </html>
