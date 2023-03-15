@@ -11,12 +11,3 @@ const changeTheVerticalCardInGrid = (event) => {
 }
 mediaQueryToGrid.addEventListener('change', changeTheVerticalCardInGrid);
 changeTheVerticalCardInGrid(mediaQueryToGrid);
-
-
-const regBtn = document.querySelector('.regBtn');
-const regField = document.querySelector('.regField');
-const mainWrap = document.querySelector('.wrap');
-regBtn.addEventListener('click', (event) => {
-    regField.classList.toggle('nonDisplay');
-    mainWrap.classList.toggle('isBackground');
-});

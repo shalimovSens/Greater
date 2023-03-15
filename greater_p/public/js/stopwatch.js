@@ -10,7 +10,7 @@ let hr = min = sec = '0' + 0,
 
 
 let P_OfProgressCircle = 2 * Math.PI * (document.querySelector('.circle').offsetWidth * 0.465);
-const mediaQueryToProgress = window.matchMedia('screen and (max-width: 830px)');
+const mediaQueryToProgress = window.matchMedia('screen and (max-width: 800px)');
 const changeTheProgress = (event) => {
     if (event.matches) {
         P_OfProgressCircle = 2 * Math.PI * (document.querySelector('.circle').offsetWidth * 0.465);

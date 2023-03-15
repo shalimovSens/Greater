@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ env('APP_NAME') }}</title>
     <link rel="stylesheet" href="/css/index.css">
-    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@1,400;1,700&display=swap" rel="stylesheet"> --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -76,9 +75,13 @@
                             </div>
                         </div>
                     </article>
-                    <div class="WrapOfAccBtn">
-                        <button class="btn regBtn">Registration</button>
-                        <button class="btn logBtn">Login</button>
+                    <div class="wrapOfAccBtn">
+                        <div class="btnWrap"> 
+                           <a href="/registration"><button class="btn regBtn">Registration</button></a>
+                        </div>
+                        <div class="btnWrap">
+                            <a href="/login"><button class="btn logBtn">Login</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,23 +94,6 @@
                 </div>
             </div>
         </footer>
-    </div>
-    <div class="regField nonDisplay">
-        <form action="" class="regForm">
-            <label for="">Your name
-                <input type="text">
-            </label>
-            <label for="">Email
-                <input type="email">
-            </label>
-            <label for="">Password
-                <input type="password">
-            </label>
-            <label for="">Password repeat
-                <input type="password">
-            </label>
-            <button type="submit" class="btn">Submit</button>
-        </form>
     </div>
     <script src="/js/script.js"></script>
     <script src="/js/stopwatch.js"></script>

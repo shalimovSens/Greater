@@ -19,8 +19,11 @@ use App\Http\Controllers\MainController;
 // });
 
 Route::get('/', [MainController::class, 'viewIndex']);
-Route::get('/test', [MainController::class, 'viewTest']);
+Route::get('/registration', [MainController::class, 'viewRegistration']);
+Route::get('/login', [MainController::class, 'viewLogin']);
 Route::get('php', [MainController::class, 'goToShit']);
 Route::get('/request', [MainController::class, 'viewRequest']);
 Route::get('/ip', [MainController::class, 'viewIP']);
-
+Route::get('/logs', [MainController::class, 'viewLogs']);
+Route::get('/users', [MainController::class, 'viewUsers']);
+?>
