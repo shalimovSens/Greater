@@ -12,6 +12,7 @@
     font-size: 18px;
     font-family: 'Poppins';
     outline: none;
+    list-style: none;
 }
 
 :root {
@@ -241,46 +242,18 @@ h2 span {
 .navStopwatch button {
     font-size: 24px;
 }
-.regBtn, .logBtn, .btnWrap > a {
-    width: 100%;
-    font-size: inherit;
-    line-height: inherit;
+.regBtn, .logBtn, .authBtn {
+    display: inline-block;
+    font-size: 28px;
+    padding: 12px 25px;
 }
 .wrapOfAccBtn {
     margin: 50px 0;
     display: flex;
     justify-content: center;
 }
-.btnWrap {
-    width: 20%;
-    padding: 0 20px;
-    min-width: fit-content;
-    font-size: 28px;
-    line-height: 50px;
-}
-form {
-    max-width: 600px;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    height: 470px;
-    justify-content: space-around;
-    box-sizing: content-box;
-    padding-bottom: 20px;
-    border-bottom: 2px solid var(--primary-color);
-}
-.logForm {
-    height: 280px;
-}
-label > input {
-    width: 100%;
-    margin-top: 7px;
-    height: 40px;
-    background-color: var(--primary-color);
-    box-shadow: 3px 3px var(--accent-color);
-    color: var(--background-color);
-    padding: 0 10px;
-    transition: .3s;
+.wrapOfAccBtn > a {
+    margin: 0 15px;
 }
 .formWrap {
     width: 100%;
@@ -288,8 +261,54 @@ label > input {
     flex-direction: column;
     align-items: center;
 }
-label > input:focus {
-    box-shadow: 0px 0px 7px var(--accent-color);
+.form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+}
+.form > .btn {
+    font-size: 22px;
+    margin: 10px 0;
+}
+.accFormLabel > input {
+    width: 100%;
+    margin: 7px 0 10px;
+    height: 40px;
+    background-color: var(--primary-color) !important;
+    box-shadow: 3px 3px var(--accent-color);
+    color: var(--background-color);
+    padding: 0 10px;
+    transition: .3s;
+    pointer-events: auto;
+}
+.accFormLabel {
+    padding-bottom: 15px;
+    font-size: 20px;
+    pointer-events: none;
+}
+.accFormLabel > input:focus {
+    outline: 3px solid var(--accent-color);
+    box-shadow: 0px 0px 3px var(--accent-color);
+}
+.checkbox > input{
+    width: fit-content;
+    height: fit-content;
+}
+.hasErrorInput {
+    box-shadow: 0px 0px 25px var(--accent-color) !important;
+    outline: none !important;
+}
+.errorMsg {
+    font-size: 18px;
+    padding: 0 5px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
 }
 @media screen and (max-width: 800px) {
     .navStopwatch{
@@ -379,11 +398,14 @@ label > input:focus {
     .container {
         padding: 0 15px;
     }
-    .btnWrap {
-        width: 20%;
-        padding: 0 20px;
-        min-width: fit-content;
-        font-size: unset;
-        line-height: unset;
+    .regBtn, .logBtn, .authBtn {
+        font-size: 20px;
+        padding: 10px 15px;
     }
-}
+    .wrapOfAccBtn > a {
+        margin: 0 10px;
+    }
+    .formWrap {
+        padding: 0 15px;
+    }
+}   

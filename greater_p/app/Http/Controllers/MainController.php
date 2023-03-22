@@ -5,15 +5,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Log;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+// use Illuminate\Support\Facades\Request;
 
 class MainController extends Controller
 {
     public function viewIndex () {
-        return view('index');
+        $user = Auth::user();
+        return view('index')->with('username', $user ? $user->name : 'You');
     }
-    public function viewRegistration () {
-        return view('registration');
-    }
+    // public function viewRegistration () {
+    //     return view('registration');
+    // }
     public function viewLogin () {
         return view('login');
     }
@@ -21,7 +24,7 @@ class MainController extends Controller
         return redirect('https://www.php.net/');
     }
     public function viewRequest (Request $request) {
-        dd($request->query('col'));
+        dd($request);
     }
     public function viewIP(Request $request)
     {
@@ -36,5 +39,12 @@ class MainController extends Controller
     public function viewUsers (Request $request) {
         $user = User::find($request->query('id'));
         dd($user->name);
+    }
+    public function updateLog (Request $request) {
+        $log = Log::find($request->query('name'));
+        $log->update([
+            'count' => $request->query('count'),
+        ]);
+        dd($log);
     }
 }

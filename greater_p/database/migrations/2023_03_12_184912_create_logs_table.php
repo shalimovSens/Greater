@@ -16,6 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->time('count');
             $table->string('name');
+            $table->softDeletes();
         });
     }
 

@@ -58,7 +58,7 @@ const startCounting = () => {
         };        
         progressCircle.animate(progressAnim, progressAnimTiming);
         progressCircle.style.strokeDashoffset = P_OfProgressCircle - (P_OfProgressCircle * sec) / 60;
-        console.log(P_OfProgressCircle - (P_OfProgressCircle * sec) / 60)
+        // console.log(P_OfProgressCircle - (P_OfProgressCircle * sec) / 60)
         viewHours.textContent = hr;
         viewMinutes.textContent = min;
         viewSeconds.textContent = sec;

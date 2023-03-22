@@ -11,3 +11,4 @@ const changeTheVerticalCardInGrid = (event) => {
 }
 mediaQueryToGrid.addEventListener('change', changeTheVerticalCardInGrid);
 changeTheVerticalCardInGrid(mediaQueryToGrid);
+

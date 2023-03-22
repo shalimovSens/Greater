@@ -4,10 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Log extends Model
 {
-    use HasFactory;
-    protected $primaryKey = 'name';
+    use HasFactory, SoftDeletes;
+    // protected $primaryKey = 'name';
     protected $table = 'logs';
+    protected $fillable = [ 'count', 'name', ];
+    protected $dateFormat = 'Y/m/d';
 }
