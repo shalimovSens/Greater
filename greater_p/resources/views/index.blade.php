@@ -8,12 +8,13 @@
                                 <circle cx="50%" cy="50%" r="48.8%"></circle>
                                 <circle cx="50%" cy="50%" r="46.5%" class="progressCircle"></circle>
                             </svg>
-                            <div class='time'><span class="hours textShadow">00</span>:<span class="minutes textShadow">00</span>:<span class="seconds textShadow">00</span></div>
+                            <!-- <div class='time'><span class="hours textShadow">00</span>:<span class="minutes textShadow">00</span>:<span class="seconds textShadow">00</span></div> -->
+                            <div class="time">00:00:00</div>
                         </div>
                         <div class="navStopwatch">
                             <button class="startCount btn">Start</button>
                             <button class="stopCount btn">Stop</button>
-                            <button class="resetCount btn">Reset</button>
+                            <button class="saveCount btn">Save</button>
                         </div>
                     </div>
                     @endauth
@@ -52,6 +53,22 @@
                             </div>
                         </div>
                     </article>
+                    @auth
+                    <section>
+                        <h2 class='mainTitle'>You progress to greatness</h2>
+                        <table class='resultTable'>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Counted</th>
+                                </tr>
+                            </thead>
+                            <tbody class='tableBody'>
+
+                            </tbody>
+                        </table>
+                    </section>
+                    @endauth
                     <div class="wrapOfAccBtn">
                     @auth
                         <a href="{{ route('logout') }}"><button class="btn logBtn">Logout</button></a>
@@ -64,10 +81,11 @@
                     
 @endsection
 @section('javascript')
+    <script src="/js/script.js"></script>
+    <script src="/js/service.js"></script>
     @auth
         <script src="/js/logs.js"></script>
-        <script src="/js/stopwatch.js"></script>
+        <script src="/js/newTimer.js"></script>
+        <!-- <script src="/js/stopwatch.js"></script> -->
     @endauth
-    <script src="/js/script.js"></script>
-    <script src="/js/newTimer.js"></script>
 @endsection

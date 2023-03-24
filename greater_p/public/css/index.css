@@ -332,6 +332,34 @@ input:-webkit-autofill:active {
         font-size: 32px;
     }
 }
+.resultTable {
+    width: 90%;
+    border-spacing: 0px;
+    border-collapse: separate;
+    margin: 50px auto;
+}
+.resultTable > thead > tr > th:last-child, .resultTable > thead > tr > th:first-child  {
+    border-top: none;
+}
+.resultTable > tbody > tr:last-child > td {
+    border-bottom: none;
+}
+.resultTable tr td:first-child, .resultTable tr th:first-child{
+    border-left: none;
+} 
+.resultTable tr td:last-child, .resultTable tr th:last-child{
+    border-right: none;
+} 
+.resultTable td, .resultTable th {
+    padding: 10px;
+    border: 1.5px solid var(--primary-color);
+    width: 50%;
+}
+.tableBody td{
+    text-align: center;
+}
+
+
 @media screen and (max-width: 1550px) {
     .cardInner {
         background: -moz-linear-gradient(right, var(--background-color) 25%, rgba(0, 0, 0, 0));

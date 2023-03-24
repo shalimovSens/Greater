@@ -42,7 +42,8 @@ class LogController extends Controller
             'created_at' => $data['created_at'],
             'name' => $data['name'],
         ],$data);
-        return response()->json($log);
+        $allLogs = Log::where('name', $username)->get();
+        return response()->json($allLogs);
         // return collect($sumOfCount)->toJson();
     }
 }
